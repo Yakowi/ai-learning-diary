@@ -1,0 +1,111 @@
+a = int(input()) # ФОРМУЛА ГЕРОНА
+b = int(input())
+c = int(input())
+p = (a + b + c) / 2
+print((p * (p - a) * (p - b) * (p - c)) ** 0.5)
+
+a = int(input())  # определение числа в интервале
+if (-15 < a <= 12) or (14 < a < 17) or (19 <= a):
+    print('True')
+else:
+    print('False')
+
+# простой калькулятор
+a = float(input())
+b = float(input())
+c = str(input())
+if c == '+':
+    print(a + b)
+elif c == '-':
+    print(a - b)
+elif c == '*':
+    print(a * b)
+elif c == '/':
+    if b == 0.0:
+        print('Деление на 0!')
+    else:
+        print(a / b)
+elif c == 'mod':
+    if b == 0.0:
+        print('Деление на 0!')
+    else:
+        print(a % b)
+elif c == 'pow':
+    print(a ** b)
+elif c == 'div':
+    if b == 0.0:
+        print('Деление на 0!')
+    else:
+        print(a // b)
+
+  # расчет площади квартир
+f = input()
+if f == 'треугольник':
+    a = int(input()) # ФОРМУЛА ГЕРОНА
+    b = int(input())
+    c = int(input())
+    p = (a + b + c) / 2
+    print((p * (p - a) * (p - b) * (p - c)) ** 0.5)
+elif f == 'прямоугольник':
+    a = int(input())
+    b = int(input())
+    print(a * b)
+elif f == 'круг':
+    r = int(input())
+    pi = 3.14
+    print(pi * r ** 2)
+
+#вывод: большее - меньшее - остаток
+a = int(input())
+b = int(input())
+c = int(input())
+if a >= b >= c:
+    print(a)
+    print(c)
+    print(b)
+elif a <= b <= c:
+    print(c)
+    print(a)
+    print(b)
+elif a >= c >= b:
+    print(a)
+    print(b)
+    print(c)
+elif c >= a >= b:
+    print(c)
+    print(b)
+    print(a)
+elif b >= a >= c:
+    print(b)
+    print(c)
+    print(a)
+elif b >= c >= a:
+    print(b)
+    print(a)
+    print(c)
+
+#склонение слов
+n = int(input())
+a = n % 10
+b = n % 100
+if b in range (11, 20):
+    print(n, 'программистов')
+elif a == 1:
+    print(n, 'программист')
+elif a in range (2, 5):
+    print(n, 'программиста')
+else:
+    print(n, 'программистов')
+
+# опеределения билета
+n = int(input())
+a = n // 100000
+b = n // 10000 % 10
+c = n // 1000 % 10
+d = n // 100 % 10
+e = n // 10 % 10
+f = n % 10
+if a + b + c == d + e + f:
+    print('Счастливый')
+else:
+    print('Обычный')
